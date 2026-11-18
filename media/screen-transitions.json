@@ -1,6 +1,17 @@
 {
   "app": "busybar-orbit-range",
-  "sha256": "8a69822be64b5a62139bc94fe9087e43977be7520d5da585ad882d73fade5b2f",
+  "sha256": "9a6648f6eb8ff3426c61e432731d3d49bb90b29ad85f262f70f42bd0ea5973e5",
+  "rapid_input_test": {
+    "app": "io.ncoooooper.orbitrange",
+    "sha256": "9a6648f6eb8ff3426c61e432731d3d49bb90b29ad85f262f70f42bd0ea5973e5",
+    "firmware": {
+      "name": "1.3.1",
+      "commit": "8edd2da4"
+    },
+    "heap_peak_kib": 90.0,
+    "budget_kib": 128.0,
+    "exit": "finished"
+  },
   "firmware": "1.3.1",
   "cell": 16,
   "lit": 14,

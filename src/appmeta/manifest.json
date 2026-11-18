@@ -2,7 +2,7 @@
   "format_version": 1,
   "id": "io.ncoooooper.orbitrange",
   "name": "Orbit Range",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "api_version": "27.12.0",
   "description": "Measure observer-to-object distance for planets, comets and tracked satellites.",
   "author": "ncoooooper"
