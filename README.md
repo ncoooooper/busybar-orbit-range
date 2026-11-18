@@ -2,6 +2,20 @@
 
 Read the line-of-sight distance from your observing location to a celestial target or satellite. A satellite directly over your city and one below the horizon can have very different ranges even at the same orbital altitude.
 
+## Screen transitions
+
+Switch between the distance to the object and the observer coordinates used for the estimate.
+
+![Orbit Range front display. Switch between the distance to the object and the observer coordinates used for the estimate.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Orbit Range rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Setup
 
 Set `latitude`, `longitude` and `altitude_m` for the observer. The default selects Mars with Horizons ID `499`. Use `301` for the Moon or a specific small-body designation such as `DES=1P;CAP;` for Halley, and update `name`. Resolve ambiguous object names in JPL Horizons first. For the ISS, remove `target`, add `"catalog_id":25544`, set `name` to `ISS` and install `companion/requirements-satellite.txt`. Satellite mode uses public CelesTrak elements, refreshes them hourly, and rejects elements over seven days old. If CelesTrak is unavailable, the ISS example also checks the AMSAT element bulletin. To use a downloaded element file, keep `catalog_id` and set `tle_file` to its local path.
@@ -36,7 +50,7 @@ Install BUSY Bar Emulator and open it. From this repository run the following co
 ~/.busy-emulator/bin/busy-emulator dev --once
 ```
 
-The recordings use example responses on emulator firmware. Each display pixel is enlarged to a 9 × 9 square.
+The recordings use example responses on emulator firmware. Each LED occupies a 16 × 16 cell with a black border.
 
 [JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) · [CelesTrak orbital elements](https://celestrak.org/NORAD/elements/) · [Skyfield satellite positions](https://rhodesmill.org/skyfield/earth-satellites.html).
 

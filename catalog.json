@@ -2,5 +2,5 @@
   "category": "info-feeds",
   "short_description": "Measure observer-to-object distance for planets, comets and tracked satellites.",
   "description": "Measure observer-to-object distance for planets, comets and tracked satellites.",
-  "changelog": "First release."
+  "changelog": "New screen transitions and high-contrast LED previews."
 }
