@@ -4,7 +4,7 @@ Read the line-of-sight distance from your observing location to a celestial targ
 
 ## Setup
 
-Set `latitude`, `longitude` and `altitude_m` for the observer. The default selects Mars with Horizons ID `499`. Use `301` for the Moon or a specific small-body designation such as `1P;` for Halley, and update `name`. Resolve ambiguous object names in JPL Horizons first. For the ISS, remove `target`, add `"catalog_id":25544`, set `name` to `ISS` and install `companion/requirements-satellite.txt`. Satellite mode uses public CelesTrak elements, refreshes them hourly, and rejects elements over seven days old.
+Set `latitude`, `longitude` and `altitude_m` for the observer. The default selects Mars with Horizons ID `499`. Use `301` for the Moon or a specific small-body designation such as `DES=1P;CAP;` for Halley, and update `name`. Resolve ambiguous object names in JPL Horizons first. For the ISS, remove `target`, add `"catalog_id":25544`, set `name` to `ISS` and install `companion/requirements-satellite.txt`. Satellite mode uses public CelesTrak elements, refreshes them hourly, and rejects elements over seven days old. If CelesTrak is unavailable, the ISS example also checks the AMSAT element bulletin. To use a downloaded element file, keep `catalog_id` and set `tle_file` to its local path.
 
 From the repository root, copy the example and start the companion with Python 3.10 or newer.
 
